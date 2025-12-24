@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV - Nguyễn Hữu Gia Lâm</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-" crossorigin="anonymous">
+  <!-- Tailwind CDN (for utility classes) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Tabs sticky at top -->
+  <div class="profile-tabs">
+    <div class="container">
+      <nav class="nav py-2 justify-content-center" id="tabbar">
+        <a class="nav-link px-3 active" href="#profile">Trang chính</a>
+        <a class="nav-link px-3" href="#about">Tóm tắt</a>
+        <a class="nav-link px-3" href="#education">Học vấn</a>
+        <a class="nav-link px-3" href="#experience">Kinh nghiệm</a>
+        <a class="nav-link px-3" href="#projects">Dự án</a>
+        <a class="nav-link px-3" href="#skills">Kỹ năng</a>
+        <a class="nav-link px-3" href="#contact">Liên hệ</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Profile hero: cover + profile pic (full screen for profile section) -->
+  <section id="profile" class="profile-hero">
+    <div class="cover" role="img" aria-label="Ảnh bìa" style="background-image: url('images/anhnen.jpg');">
+      <div class="cover-overlay"></div>
+      <div class="container h-100 d-flex flex-column justify-content-end pb-5">
+        <div class="profile-meta text-center">
+          <div class="profile-text text-white">
+            <h1 class="display-5 mb-2">Nguyễn Hữu Gia Lâm</h1>
+            <p class="lead mb-2">Công nghệ thông tin - Công nghệ phần mềm</p>
+            <p class="mb-3"><i class="fas fa-map-marker-alt me-1"></i> Gia Lai • <i class="fas fa-birthday-cake me-1"></i> 30/04/2004</p>
+            
+            <div class="profile-contact mb-4">
+              <p class="mb-1"><i class="fas fa-envelope me-2"></i><a href="mailto:Lameem2004@gmail.com" class="text-white">Lameem2004@gmail.com</a></p>
+              <p class="mb-1"><i class="fas fa-phone me-2"></i><a href="tel:+84327621734" class="text-white">0327621734</a></p>
+            </div>
+
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+              <a class="btn btn-light" href="https://github.com/GiaLaam" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class="fab fa-github me-2"></i>GitHub
+              </a>
+              <a class="btn btn-light" href="https://www.facebook.com/nguyen.gialam.1809/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <i class="fab fa-facebook me-2"></i>Facebook
+              </a>
+              <a class="btn btn-primary" href="#" aria-label="Tải CV">
+                <i class="fas fa-download me-2"></i>Tải CV
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="container py-5">
+    <div class="row gx-5">
+      <!-- Removed aside with duplicate profile card -->
+      
+      <section class="col-12">
+        
+        <!-- About Section -->
+        <article id="about" class="card shadow-sm mb-4">
+          <div class="card-body">
+            <h3 class="section-title"><i class="fas fa-user me-2"></i>Về tôi</h3>
+            <div class="about-content">
+              <p class="about-quote">
+                <i class="fas fa-quote-left quote-icon"></i>
+                Là một người thân thiện, hoạt bát, luôn cố gắng trong công việc. Luôn tự hào là người con vùng núi Gia Lai.
+                <i class="fas fa-quote-right quote-icon"></i>
+              </p>
+              <div class="about-interests">
+                <h4 class="interests-title">Sở thích</h4>
+                <div class="interests-grid">
+                  <div class="interest-item">
+                    <div class="interest-icon"><i class="fas fa-dumbbell"></i></div>
+                    <span>Tập Gym</span>
+                  </div>
+                  <div class="interest-item">
+                    <div class="interest-icon"><i class="fas fa-motorcycle"></i></div>
+                    <span>Đi Phượt</span>
+                  </div>
+                  <div class="interest-item">
+                    <div class="interest-icon"><i class="fas fa-headphones"></i></div>
+                    <span>Nghe Nhạc</span>
+                  </div>
+                  <div class="interest-item">
+                    <div class="interest-icon"><i class="fas fa-code"></i></div>
+                    <span>Lập Trình</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="row gx-4">
+          <div class="col-lg-8">
+            
+            <!-- Education Section -->
+            <article id="education" class="card shadow-sm mb-4">
+              <div class="card-body">
+                <h3 class="section-title"><i class="fas fa-graduation-cap me-2"></i>Học vấn</h3>
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                      <div class="timeline-header">
+                        <h4 class="timeline-title">Đại học Công Nghệ TP.HCM (HUTECH)</h4>
+                        <span class="timeline-date"><i class="fas fa-calendar-alt me-1"></i>2022 - Hiện tại</span>
+                      </div>
+                      <p class="timeline-subtitle"><i class="fas fa-book me-1"></i>Chuyên ngành: Công nghệ phần mềm</p>
+                      <p class="timeline-desc">Sinh viên năm 4, khóa K22. Đang học tập và rèn luyện các kỹ năng lập trình, phát triển phần mềm.</p>
+                      <div class="timeline-tags">
+                        <span class="tag">Sinh viên năm 4</span>
+                        <span class="tag">Khóa K22</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                      <div class="timeline-header">
+                        <h4 class="timeline-title">THPT Nguyễn Khuyến</h4>
+                        <span class="timeline-date"><i class="fas fa-calendar-alt me-1"></i>2020 - 2022</span>
+                      </div>
+                      <p class="timeline-subtitle"><i class="fas fa-school me-1"></i>Trung học phổ thông</p>
+                      <p class="timeline-desc">Hoàn thành chương trình trung học phổ thông với 3 năm học tập và rèn luyện.</p>
+                      <div class="timeline-tags">
+                        <span class="tag">3 năm</span>
+                        <span class="tag">Gia Lai</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                      <div class="timeline-header">
+                        <h4 class="timeline-title">THCS Đề Thám</h4>
+                        <span class="timeline-date"><i class="fas fa-calendar-alt me-1"></i>2016 - 2020</span>
+                      </div>
+                      <p class="timeline-subtitle"><i class="fas fa-school me-1"></i>Trung học cơ sở</p>
+                      <p class="timeline-desc">Hoàn thành chương trình trung học cơ sở với 4 năm học tập và rèn luyện.</p>
+                      <div class="timeline-tags">
+                        <span class="tag">4 năm</span>
+                        <span class="tag">Gia Lai</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Experience Section -->
+            <article id="experience" class="card shadow-sm mb-4">
+              <div class="card-body">
+                <h3 class="section-title"><i class="fas fa-briefcase me-2"></i>Kinh nghiệm</h3>
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                      <div class="timeline-header">
+                        <h4 class="timeline-title">Nhân viên toàn thời gian</h4>
+                        <span class="timeline-date"><i class="fas fa-calendar-alt me-1"></i>10+ tháng</span>
+                      </div>
+                      <p class="timeline-subtitle"><i class="fas fa-building me-1"></i>Circle K Vietnam</p>
+                      <p class="timeline-desc">Phục vụ khách hàng, quản lý hàng hoá và vận hành cửa hàng tiện lợi.</p>
+                      <div class="experience-skills">
+                        <div class="exp-skill"><i class="fas fa-comments"></i> Giao tiếp</div>
+                        <div class="exp-skill"><i class="fas fa-clock"></i> Quản lý thời gian</div>
+                        <div class="exp-skill"><i class="fas fa-users"></i> Làm việc nhóm</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Projects Section -->
+            <article id="projects" class="card shadow-sm mb-4">
+              <div class="card-body">
+                <h3 class="section-title"><i class="fas fa-rocket me-2"></i>Dự án</h3>
+                <div class="projects-grid">
+                  
+                  <div class="project-card">
+                    <div class="project-icon">
+                      <i class="fas fa-music"></i>
+                    </div>
+                    <div class="project-info">
+                      <h4 class="project-title">Web Âm Nhạc</h4>
+                      <p class="project-desc">Website nghe nhạc trực tuyến với đầy đủ tính năng playlist, tìm kiếm và quản lý bài hát.</p>
+                      <div class="project-tech">
+                        <span>C#</span>
+                        <span>SQL Server</span>
+                        <span>MongoDB</span>
+                      </div>
+                      <div class="project-links">
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="project-card">
+                    <div class="project-icon">
+                      <i class="fas fa-headphones"></i>
+                    </div>
+                    <div class="project-info">
+                      <h4 class="project-title">SoundAudio</h4>
+                      <p class="project-desc">Ứng dụng nghe nhạc di động với giao diện hiện đại, hỗ trợ streaming và offline.</p>
+                      <div class="project-tech">
+                        <span>Flutter</span>
+                        <span>Dart</span>
+                        <span>REST API</span>
+                      </div>
+                      <div class="project-links">
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4">
+            
+            <!-- Skills Section -->
+            <div class="card shadow-sm mb-4" id="skills">
+              <div class="card-body">
+                <h3 class="section-title"><i class="fas fa-code me-2"></i>Kỹ năng</h3>
+                
+                <div class="skills-category">
+                  <h4 class="skills-category-title"><i class="fas fa-laptop-code me-2"></i>Ngôn ngữ</h4>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span class="skill-name">C#</span>
+                      <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span class="skill-name">Java</span>
+                      <span class="skill-percent">70%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span class="skill-name">JavaScript</span>
+                      <span class="skill-percent">60%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 60%"></div></div>
+                  </div>
+                </div>
+
+                <div class="skills-category">
+                  <h4 class="skills-category-title"><i class="fas fa-database me-2"></i>Database</h4>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span class="skill-name">SQL Server</span>
+                      <span class="skill-percent">75%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span class="skill-name">MongoDB</span>
+                      <span class="skill-percent">50%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 50%"></div></div>
+                  </div>
+                </div>
+
+                <div class="skills-category">
+                  <h4 class="skills-category-title"><i class="fas fa-tools me-2"></i>Tools</h4>
+                  <div class="tools-grid">
+                    <div class="tool-item" title="Visual Studio">
+                      <i class="fas fa-code"></i>
+                    </div>
+                    <div class="tool-item" title="Git">
+                      <i class="fab fa-git-alt"></i>
+                    </div>
+                    <div class="tool-item" title="GitHub">
+                      <i class="fab fa-github"></i>
+                    </div>
+                    <div class="tool-item" title="Figma">
+                      <i class="fab fa-figma"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Section -->
+            <article id="contact" class="card shadow-sm mb-4">
+              <div class="card-body">
+                <h3 class="section-title"><i class="fas fa-paper-plane me-2"></i>Liên hệ</h3>
+                
+                <div class="contact-list">
+                  <a href="mailto:Lameem2004@gmail.com" class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="contact-info">
+                      <span class="contact-label">Email</span>
+                      <span class="contact-value">Lameem2004@gmail.com</span>
+                    </div>
+                  </a>
+                  
+                  <a href="tel:+84327621734" class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                    <div class="contact-info">
+                      <span class="contact-label">Điện thoại</span>
+                      <span class="contact-value">0327 621 734</span>
+                    </div>
+                  </a>
+                  
+                  <a href="https://github.com/GiaLaam" target="_blank" class="contact-item">
+                    <div class="contact-icon"><i class="fab fa-github"></i></div>
+                    <div class="contact-info">
+                      <span class="contact-label">GitHub</span>
+                      <span class="contact-value">@GiaLaam</span>
+                    </div>
+                  </a>
+                  
+                  <a href="https://www.facebook.com/nguyen.gialam.1809/" target="_blank" class="contact-item">
+                    <div class="contact-icon"><i class="fab fa-facebook"></i></div>
+                    <div class="contact-info">
+                      <span class="contact-label">Facebook</span>
+                      <span class="contact-value">Gia Lâm</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="contact-cta">
+                  <p>Sẵn sàng hợp tác!</p>
+                  <a href="mailto:Lameem2004@gmail.com" class="btn btn-primary w-100">
+                    <i class="fas fa-envelope me-2"></i>Gửi Email
+                  </a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </section>
+    </div>
+
+    <footer class="text-center mt-5 small text-muted">
+      <p class="mb-2">Được viết <i class="fas fa-heart" style="color: var(--spotify-green)"></i> bởi Nguyễn Hữu Gia Lâm</p>
+    </footer>
+  </main>
+
+  <!-- Bootstrap JS bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-" crossorigin="anonymous"></script>
+
+  <!-- Smooth scroll + active tab script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      const sections = document.querySelectorAll('section[id], article[id], div[id]');
+      const navLinks = document.querySelectorAll('#tabbar .nav-link');
+      let isScrolling = false;
+      let scrollTimeout;
+
+      // Update active link
+      function setActiveLink(id) {
+        navLinks.forEach(link => {
+          const isActive = link.getAttribute('href') === '#' + id;
+          link.classList.toggle('active', isActive);
+        });
+      }
+
+      // IntersectionObserver to detect active section
+      const obsOptions = { root: null, rootMargin: '-30% 0px -50% 0px', threshold: 0 };
+      const observer = new IntersectionObserver((entries) => {
+        if (isScrolling) return;
+        
+        entries.forEach(entry => {
+          if(entry.isIntersecting) {
+            setActiveLink(entry.target.id);
+          }
+        });
+      }, obsOptions);
+
+      sections.forEach(s => {
+        if(s.id) observer.observe(s);
+      });
+
+      // Smooth scroll click handler
+      navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetId = link.getAttribute('href');
+          const targetEl = document.querySelector(targetId);
+          
+          if(targetEl) {
+            isScrolling = true;
+            
+            // Remove focus outline
+            link.blur();
+            
+            // Update active immediately
+            navLinks.forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
+            
+            // Scroll to target
+            targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            
+            // Re-enable observer after scroll completes
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(() => {
+              isScrolling = false;
+            }, 1000);
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
