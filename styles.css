@@ -552,6 +552,67 @@ a:focus-visible, button:focus-visible, .btn:focus-visible {
   transition: all 0.3s ease;
 }
 
+/* ========== STRENGTHS & WEAKNESSES ========== */
+.about-strengths {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.strength-item {
+  padding: 20px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.strength-item.strength {
+  background: rgba(29, 185, 84, 0.1);
+  border: 1px solid rgba(29, 185, 84, 0.3);
+}
+
+.strength-item.weakness {
+  background: rgba(255, 170, 0, 0.1);
+  border: 1px solid rgba(255, 170, 0, 0.3);
+}
+
+.strength-item:hover {
+  transform: translateY(-3px);
+}
+
+.strength-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.strength-header i {
+  font-size: 1.2rem;
+}
+
+.strength-item.strength .strength-header i {
+  color: var(--spotify-green);
+}
+
+.strength-item.weakness .strength-header i {
+  color: #ffaa00;
+}
+
+.strength-header h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--spotify-text);
+  margin: 0;
+}
+
+.strength-item p {
+  font-size: 0.9rem;
+  color: var(--spotify-text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
 /* ========== TIMELINE (Education & Experience) ========== */
 .timeline {
   position: relative;
@@ -1059,5 +1120,90 @@ a:focus-visible, button:focus-visible, .btn:focus-visible {
   
   .experience-skills {
     justify-content: center;
+  }
+}
+
+/* ========== CERTIFICATES SECTION ========== */
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 800px;
+}
+
+a.certificate-card {
+  display: block;
+  background: var(--spotify-card-hover);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  max-width: 380px;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(29, 185, 84, 0.2);
+}
+
+.certificate-image {
+  position: relative;
+  overflow: hidden;
+  background: var(--spotify-card);
+  padding: 12px;
+}
+
+.certificate-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.certificate-card:hover .certificate-image img {
+  transform: scale(1.05);
+}
+
+.certificate-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.certificate-card:hover .certificate-image::after {
+  opacity: 1;
+}
+
+.certificate-info {
+  padding: 16px;
+}
+
+.certificate-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--spotify-text);
+  margin: 0 0 8px 0;
+}
+
+.certificate-issuer {
+  font-size: 0.85rem;
+  color: var(--spotify-green);
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.certificate-issuer i {
+  margin-right: 6px;
+}
+
+@media (max-width: 576px) {
+  .certificates-grid {
+    grid-template-columns: 1fr;
   }
 }
