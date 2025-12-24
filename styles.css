@@ -578,6 +578,17 @@ a:focus-visible, button:focus-visible, .btn:focus-visible {
 
 .strength-item:hover {
   transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.strength-item.strength:hover {
+  background: rgba(29, 185, 84, 0.2);
+  border-color: rgba(29, 185, 84, 0.5);
+}
+
+.strength-item.weakness:hover {
+  background: rgba(255, 170, 0, 0.2);
+  border-color: rgba(255, 170, 0, 0.5);
 }
 
 .strength-header {
@@ -1131,9 +1142,10 @@ a:focus-visible, button:focus-visible, .btn:focus-visible {
   max-width: 800px;
 }
 
-a.certificate-card {
+a.certificate-card,
+.certificate-card {
   display: block;
-  background: var(--spotify-card-hover);
+  background: #282828;
   border-radius: 12px;
   overflow: hidden;
   transition: all 0.3s ease;
@@ -1142,9 +1154,11 @@ a.certificate-card {
   max-width: 380px;
 }
 
+a.certificate-card:hover,
 .certificate-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(29, 185, 84, 0.2);
+  box-shadow: 0 10px 30px rgba(29, 185, 84, 0.3);
+  background: #333333;
 }
 
 .certificate-image {
@@ -1162,6 +1176,7 @@ a.certificate-card {
   transition: transform 0.3s ease;
 }
 
+a.certificate-card:hover .certificate-image img,
 .certificate-card:hover .certificate-image img {
   transform: scale(1.05);
 }
